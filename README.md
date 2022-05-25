@@ -2,7 +2,7 @@
 
 Line Notifyを無理矢理まとめた
 
-## Function
+# Function
 - sendMessage
 - sendSticker
 - sendImage
@@ -13,10 +13,11 @@ Line Notifyを無理矢理まとめた
 * Line-Notify-Token
 
 LINE Notifyのトークン取得方法
-ここからアカウントを登録してトークンを取得
-https://notify-bot.line.me/ja/
+
+[ここ](https://notify-bot.line.me/ja/)からアカウントを登録してトークンを取得
 
 アカウント作成後、マイページ -> トークンを発行する -> トークン名/トークルームを設定 -> 発行する
+
 発行されたトークンをコピーし以下のようにする
 ```
 self.token = "ここにコピーしたトークン"
