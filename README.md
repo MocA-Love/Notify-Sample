@@ -2,17 +2,17 @@
 
 Line Notifyを無理矢理まとめた
 
-# Function
+## Function
 - sendMessage
 - sendSticker
 - sendImage
 - sendImageWithURL
 
-# Requirement
+## Requirement
 
 * Line-Notify-Token
 
-# Token
+## Token
 LINE Notifyのトークン取得方法
 
 [ここ](https://notify-bot.line.me/ja/)からアカウントを登録してトークンを取得
@@ -24,6 +24,6 @@ LINE Notifyのトークン取得方法
 self.token = "コピーしたトークン"
 ```
 
-# Author
+## Author
 
 * MaguRo
