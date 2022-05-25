@@ -27,21 +27,21 @@ self.token = "コピーしたトークン"
 
 ## Usage
 
-### 文字送信
+#### 文字送信
 ```
 self.sendMessage("Hello World")
 ```
-### スタンプ送信
+#### スタンプ送信
 パッケージ・スタンプIDは[ここ](https://developers.line.biz/ja/docs/messaging-api/sticker-list/)から取得
 
 ```
 self.sendSticker("1070", "17865")
 ```
-### 画像送信
+#### 画像送信
 ```
 self.sendImage("sample.jpg")
 ```
-### URLの画像を送信
+#### URLの画像を送信
 ```
 self.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", "あっかりーん")
 ```
