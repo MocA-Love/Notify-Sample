@@ -36,8 +36,7 @@ class Maguro():
     #　スタンプ送信
     def sendSticker(self, pkg_id: str, stk_id: str, msg: str="sticker") -> None:
         """ pkg_id : package id, stk_id : sticker id, msg : sticker title
-            pkg_id : パッケージID, stk_id : スタンプID, msg : スタンプタイトル
-            IDs : https://developers.line.biz/ja/docs/messaging-api/sticker-list """
+            pkg_id : パッケージID, stk_id : スタンプID, msg : スタンプタイトル """
         self.post({"message": msg, "stickerPackageId": pkg_id, "stickerId": stk_id})
 
     # 画像送信
