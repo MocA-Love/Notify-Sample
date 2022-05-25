@@ -12,6 +12,7 @@ Line Notifyを無理矢理まとめた
 
 * Line-Notify-Token
 
+# Token
 LINE Notifyのトークン取得方法
 
 [ここ](https://notify-bot.line.me/ja/)からアカウントを登録してトークンを取得
@@ -20,7 +21,7 @@ LINE Notifyのトークン取得方法
 
 発行されたトークンをコピーし以下のようにする
 ```
-self.token = "ここにコピーしたトークン"
+self.token = "コピーしたトークン"
 ```
 
 # Author
