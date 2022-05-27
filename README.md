@@ -34,7 +34,7 @@ self.token = "コピーしたトークン"
 self.sendMessage("Hello World")
 ```
 #### スタンプ送信
-パッケージ・スタンプIDは[ここ](https://developers.line.biz/ja/docs/messaging-api/sticker-list/)から取得
+* パッケージ・スタンプIDは[ここ](https://developers.line.biz/ja/docs/messaging-api/sticker-list/)から取得
 
 ```
 self.sendSticker("1070", "17865")
@@ -51,9 +51,11 @@ self.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr
 ```
 self.revoke_token()
 ```
-#### いちおう
-* send系はmsg="hoge"とする事で送信時のメッセージをカスタム可能
+#### 一応かいてみる
+* 以下の関数はmsg="hoge"で送信時のメッセージをカスタム可能(もちろん"msg="略可)
 ```
+self.sendSticker("1070", "17865", msg="すたんぷだよ")
+self.sendImage("sample.jpg", "ヲレの嫁！")
 self.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", msg="あっかりーん")
 ```
 
