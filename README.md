@@ -7,6 +7,8 @@ Line Notifyを無理矢理まとめた
 - sendSticker
 - sendImage
 - sendImageWithURL
+- check_token
+- revoke_token
 
 ## Requirement
 
@@ -44,6 +46,10 @@ self.sendImage("sample.jpg")
 #### URLの画像を送信
 ```
 self.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", "あっかりーん")
+```
+#### トークン無効化
+```
+self.revoke_token()
 ```
 
 ## Author
