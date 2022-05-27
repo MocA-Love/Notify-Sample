@@ -34,16 +34,19 @@ self.token = "コピーしたトークン"
 self.sendMessage("Hello World")
 ```
 #### スタンプ送信
+msg="hoge"とする事で送信時のメッセージをカスタム可能
 パッケージ・スタンプIDは[ここ](https://developers.line.biz/ja/docs/messaging-api/sticker-list/)から取得
 
 ```
 self.sendSticker("1070", "17865")
 ```
 #### 画像送信
+msg="hoge"とする事で送信時のメッセージをカスタム可能
 ```
 self.sendImage("sample.jpg")
 ```
 #### URLの画像を送信
+msg="hoge"とする事で送信時のメッセージをカスタム可能
 ```
 self.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", "あっかりーん")
 ```
