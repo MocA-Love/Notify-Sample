@@ -1,6 +1,7 @@
 # Line Notify Sample
 
 Line Notifyを無理矢理まとめた
+
 雑なのは我慢してk(ry
 
 ## Function
