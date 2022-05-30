@@ -38,7 +38,7 @@ class Maguro():
             raise ValueError("plz enter url")
         with open("tmp.jpg", "wb") as f:
             f.write(requests.get(url).content)
-        self.post({"message": msg}, {"imageFile": open("tmp.jpg", "rb")})
+        self._post({"message": msg}, {"imageFile": open("tmp.jpg", "rb")})
 
     def check_token(self) -> Response:
         """ check if the token is valid """

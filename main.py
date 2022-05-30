@@ -14,6 +14,5 @@ def main() -> None:
     msg = Maguro("")
     msg.sendMessage("hi tuna")
 
-
 if __name__ == "__main__":
     main()
