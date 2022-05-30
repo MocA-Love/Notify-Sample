@@ -1,9 +1,4 @@
-# hi there (˙꒳​˙)
 # this program was created by MaguRo
-# i'd be happy to help u all learn how to program
-# have a nice programming life!!
-#
-# plz check:https://github.com/MocA-Love/Notify-Sample
 
 from requests import Response
 import requests
@@ -76,14 +71,3 @@ class Maguro():
         if r.status_code != 200:
             raise Exception("some error has occurred :(")
         return r
-
-
-def main() -> None:
-    """ write the process here | ここに処理を書く """
-    # Line-Notify token
-    msg = Maguro("")
-    msg.sendMessage("hi tuna")
-
-
-if __name__ == "__main__":
-    main()
