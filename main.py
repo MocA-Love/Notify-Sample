@@ -12,7 +12,7 @@ def main() -> None:
     
     # Line-Notify token
     msg = Maguro("")
-    msg.sendMessage("たばたすき")
+    msg.sendMessage("hi tuna")
 
 
 if __name__ == "__main__":
