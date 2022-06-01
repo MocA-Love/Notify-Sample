@@ -54,11 +54,19 @@ msg.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.
 msg.revoke_token()
 ```
 #### 一応かいてみる
-* 以下の関数はmsg="hoge"で送信時のメッセージをカスタム可能(もちろん"msg="略可)
+* 以下の関数はmsg="hoge"で送信時のメッセージをカスタム可能
 ```
 msg.sendSticker("1070", "17865", msg="すたんぷだよ")
 msg.sendImage("sample.jpg", "ヲレの嫁！")
-msg.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", msg="あっかりーん")
+msg.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", あっかりーん")
+```
+
+* 以下の関数はsilent=Trueで送信時のプッシュ通知をオフに可能
+```
+msg.sendMessage("ゆなしゅきぃ///", silent=True)
+msg.sendSticker("1070", "17865", msg="すたんぷだよ", True)
+msg.sendImage("sample.jpg", "ヲレの嫁！", True)
+msg.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.png", あっかりーん", True)
 ```
 
 ## Author
