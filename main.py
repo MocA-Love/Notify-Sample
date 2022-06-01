@@ -8,11 +8,19 @@ from notify import Maguro
 
 
 def main() -> None:
-    """ write the process here | ここに処理を書く """
-    
+    """write the process here | ここに処理を書く
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
+
     # Line-Notify token
     msg = Maguro("")
     msg.sendMessage("hi tuna")
+
 
 if __name__ == "__main__":
     main()
