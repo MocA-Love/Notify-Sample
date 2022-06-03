@@ -9,8 +9,8 @@ Line Notifyを無理矢理まとめた
 - sendSticker
 - sendImage
 - sendImageWithURL
-- check_token
-- revoke_token
+- check
+- revoke
 
 ## Requirement
 
@@ -51,7 +51,7 @@ msg.sendImageWithURL("https://img.atwiki.jp/niconicomugen/attach/6163/12458/akr.
 ```
 #### トークン無効化
 ```
-msg.revoke_token()
+msg.revoke()
 ```
 #### 一応かいてみる
 * 以下の関数はmsg="hoge"で送信時のメッセージをカスタム可能
