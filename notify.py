@@ -7,7 +7,7 @@ import requests
 class Maguro():
     def __init__(self, token):
         self.token = token
-        self.check_token()
+        self.check()
 
     def sendMessage(self, msg: str, silent: bool=False) -> None:
         """Send text | テキスト送信
@@ -63,7 +63,7 @@ class Maguro():
             f.write(requests.get(url).content)
         self._post({"message": msg, "notificationDisabled": silent}, {"imageFile": open("tmp.jpg", "rb")})
 
-    def check_token(self) -> Response:
+    def check(self) -> Response:
         """Check if the token is valid | トークンが有効か確認
 
         Args:
@@ -80,7 +80,7 @@ class Maguro():
             raise Exception("invalid token")
         return r
 
-    def revoke_token(self) -> Response:
+    def revoke(self) -> Response:
         """Deactivate token | トークン無効化
 
         Args:
