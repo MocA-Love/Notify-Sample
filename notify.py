@@ -9,7 +9,6 @@ class Maguro():
         self.token = token
         self.check_token()
 
-
     def sendMessage(self, msg: str, silent: bool=False) -> None:
         """Send text | テキスト送信
 
@@ -20,10 +19,7 @@ class Maguro():
         Returns:
             None
         """
-        if not msg:
-            raise ValueError("plz enter text")
         self._post({"message": msg, "notificationDisabled": silent})
-
 
     def sendSticker(self, pkg_id: str="1", stk_id: str="1", msg: str="sticker", silent: bool=False) -> None:
         """Send sticker | スタンプ送信
@@ -39,7 +35,6 @@ class Maguro():
         """
         self._post({"message": msg, "stickerPackageId": pkg_id, "stickerId": stk_id, "notificationDisabled": silent})
 
-
     def sendImage(self, path: str, msg: str="image", silent: bool=False) -> None:
         """Send image | 画像送信
 
@@ -51,10 +46,7 @@ class Maguro():
         Returns:
             None
         """
-        if not path:
-            raise ValueError("plz enter path")
         self._post({"message": msg, "notificationDisabled": silent}, {"imageFile": open(path, "rb")})
-
 
     def sendImageWithURL(self, url: str, msg: str="image", silent: bool=False) -> None:
         """Send url image | URLの画像送信
@@ -67,12 +59,9 @@ class Maguro():
         Returns:
             None
         """
-        if not url:
-            raise ValueError("plz enter url")
         with open("tmp.jpg", "wb") as f:
             f.write(requests.get(url).content)
         self._post({"message": msg, "notificationDisabled": silent}, {"imageFile": open("tmp.jpg", "rb")})
-
 
     def check_token(self) -> Response:
         """Check if the token is valid | トークンが有効か確認
